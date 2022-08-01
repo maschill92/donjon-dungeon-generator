@@ -1,0 +1,292 @@
+{
+  "cell_bit": {
+    "aperture": 32,
+    "arch": 65536,
+    "block": 1,
+    "corridor": 4,
+    "door": 131072,
+    "label": 4278190080,
+    "locked": 262144,
+    "nothing": 0,
+    "perimeter": 16,
+    "portcullis": 2097152,
+    "room": 2,
+    "room_id": 65472,
+    "secret": 1048576,
+    "stair_down": 4194304,
+    "stair_up": 8388608,
+    "trapped": 524288
+  },
+  "cells": [
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 0,
+      16, 16, 16, 16, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 131076, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16,
+      0, 16, 194, 194, 194, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 0,
+      16, 194, 194, 194, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      131076, 194, 855638210, 194, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      16, 194, 194, 194, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      16, 194, 194, 194, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 822083650, 66, 66, 66, 66, 66,
+      16, 4, 16, 16, 16, 16, 16, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 66, 16, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 131076, 16, 16, 16, 4, 0, 0, 0, 4, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 130, 130, 130, 16, 4, 0, 0, 0, 4, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 130, 130, 130, 16, 4, 0, 0, 0, 4, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 130, 838860930, 130, 16, 4, 0, 0, 0, 4,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 130, 130, 130, 16, 4, 0, 0, 0, 4, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 130, 130, 130, 16, 4, 4, 4, 4, 4, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 16, 16, 16, 4, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ],
+    [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0
+    ]
+  ],
+  "corridor_features": {},
+  "details": {
+    "floor": "Flagstone",
+    "illumination": "Shadowy (phosphorescent fungus or candles every 20 ft.)",
+    "special": null,
+    "temperature": "Average",
+    "walls": "Masonry"
+  },
+  "egress": [
+    { "col": 11, "depth": 0, "dir": "south", "row": 21, "type": "corridor" }
+  ],
+  "rooms": [
+    null,
+    {
+      "area": 12100,
+      "col": 3,
+      "contents": {
+        "detail": {
+          "room_features": "The floor is covered in perfect hexagonal tiles, and a ruined siege weapon sits in the north-east corner of the room"
+        },
+        "summary": "Empty"
+      },
+      "doors": {
+        "west": [
+          {
+            "col": 2,
+            "desc": "Stuck Good Wooden Door",
+            "row": 3,
+            "type": "door"
+          }
+        ]
+      },
+      "east": 13,
+      "height": 110,
+      "id": 1,
+      "north": 3,
+      "row": 3,
+      "shape": "square",
+      "size": "huge",
+      "south": 13,
+      "west": 3,
+      "width": 110
+    },
+    {
+      "area": 1500,
+      "col": 7,
+      "contents": {
+        "detail": {
+          "hidden_treasure": [
+            "Hidden Locked Simple Wooden Chest (common lock)",
+            "--",
+            "Hematite (10 gp), Moonstone (50 gp), Black Opal (1000 gp)"
+          ],
+          "room_features": "A tile mosaic of ancient mythology covers the floor, and someone has scrawled \"In the Dominion of Cauldrons, when east becomes west, the Mirror of Sorcery shall be destroyed\" on the south wall"
+        },
+        "summary": "Hidden Treasure"
+      },
+      "doors": {
+        "north": [
+          { "col": 7, "desc": "Unlocked Iron Door", "row": 16, "type": "door" }
+        ]
+      },
+      "east": 9,
+      "height": 50,
+      "id": 2,
+      "north": 17,
+      "row": 17,
+      "shape": "square",
+      "size": "medium",
+      "south": 21,
+      "west": 7,
+      "width": 30
+    },
+    {
+      "area": 1500,
+      "col": 17,
+      "contents": {
+        "detail": {
+          "room_features": "A stone ramp ascends towards the north wall, and spirals of red stones cover the floor"
+        },
+        "summary": "Empty"
+      },
+      "doors": {
+        "west": [
+          {
+            "col": 16,
+            "desc": "Unlocked Simple Wooden Door",
+            "row": 5,
+            "type": "door"
+          }
+        ]
+      },
+      "east": 19,
+      "height": 50,
+      "id": 3,
+      "north": 3,
+      "row": 3,
+      "shape": "square",
+      "size": "medium",
+      "south": 7,
+      "west": 17,
+      "width": 30
+    }
+  ],
+  "settings": {
+    "add_stairs": "",
+    "bleed": 4,
+    "cell_size": 18,
+    "corridor_layout": "Straight",
+    "door_set": "Standard",
+    "dungeon_layout": "Square",
+    "dungeon_size": "Fine",
+    "grid": "Square",
+    "image_size": "",
+    "infest": "adnd",
+    "last_room_id": 3,
+    "level": 1,
+    "map_cols": "51",
+    "map_rows": "65",
+    "map_style": "Standard",
+    "max_col": 22,
+    "max_row": 22,
+    "motif": "",
+    "n_cols": 23,
+    "n_i": 11,
+    "n_j": 11,
+    "n_pc": 4,
+    "n_rooms": 3,
+    "n_rows": 23,
+    "name": "The Dark Crypts of Nergani",
+    "peripheral_egress": "Yes",
+    "remove_arcs": "All",
+    "remove_deadends": "All",
+    "room_layout": "Sparse",
+    "room_polymorph": "",
+    "room_size": "Huge",
+    "seed": 5036115
+  },
+  "wandering_monsters": {
+    "1": "1 x Fire Beetle, wielding bizarre eldritch powers",
+    "2": "15 x Halfling, trying to lure the party into an ambush",
+    "3": "10 x Orc, lost and desperate",
+    "4": "3 x Piercer, hunting for food",
+    "5": "3 x Piercer, trying to lure the party into an ambush",
+    "6": "13 x Giant Rat, actively patrolling their territory"
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  min-width: 25px;
+  min-height: 25px;
+  border: 1px solid darkgray;
+}
+
+.cell.open {
+  background-color: white;
+}
+.cell.perimeter {
+  background-color: lightgray;
+}
+.cell.door-space {
+  background-color: cornflowerblue;
+}
+.cell.empty {
+  background-color: black;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "donjon-dungeon-generator",
+  "title": "Donjon Dungeon Generator",
+  "description": ".",
+  "author": "maschill92",
+  "version": "1.0.0",
+  "minimumCoreVersion": "9",
+  "esmodules": ["donjon-dungeon-generator.js"],
+  "styles": ["style.css"]
+}
