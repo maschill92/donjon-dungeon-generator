@@ -31,6 +31,15 @@ const BLOCK_ROOM = BLOCKED | ROOM;
 const BLOCK_CORR = BLOCKED | PERIMETER | CORRIDOR;
 const BLOCK_DOOR = BLOCKED | DOORSPACE;
 
+type DoorType =
+  | false
+  | "arch"
+  | "door"
+  | "locked"
+  | "trapped"
+  | "secret"
+  | "portcullis";
+
 //#endregion cell bits
 
 interface DonjonDungeonCell {
@@ -38,7 +47,7 @@ interface DonjonDungeonCell {
   nothing: boolean;
   perimeter: boolean;
   openSpace: boolean;
-  doorSpace: boolean;
+  doorSpace: DoorType;
   label: boolean;
 }
 
@@ -48,7 +57,7 @@ function parseCellData(cell: number): DonjonDungeonCell {
     nothing: cell === NOTHING,
     perimeter: !!(cell & PERIMETER),
     openSpace: !!(cell & OPENSPACE),
-    doorSpace: !!(cell & DOORSPACE),
+    doorSpace: parseCellDoorType(cell),
     label: !!(cell & LABEL),
   };
 }
@@ -59,4 +68,25 @@ export function parseDonjonData(donjonData: RawDonjonDungeon) {
       return parseCellData(cell);
     });
   });
+}
+function parseCellDoorType(cell: number): DoorType {
+  if (cell & DOORSPACE) {
+    if (cell & ARCH) {
+      return "arch";
+    } else if (cell & DOOR) {
+      return "door";
+    } else if (cell & LOCKED) {
+      return "locked";
+    } else if (cell & TRAPPED) {
+      return "trapped";
+    } else if (cell & SECRET) {
+      return "secret";
+    } else if (cell & PORTC) {
+      return "portcullis";
+    } else {
+      throw new Error(`Unabled to parse door type for ${cell}`);
+    }
+  }
+
+  return false;
 }

@@ -1,6 +1,6 @@
 import "./donjon.png";
 import "./test.css";
-import donjonDataRaw from "./donjon.json";
+import donjonDataRaw from "./donjon-2.json";
 import { parseDonjonData, RawDonjonDungeon } from "../donjon-parser";
 
 const donjonData: RawDonjonDungeon = donjonDataRaw;
@@ -24,7 +24,7 @@ parsed.forEach((row, rowIdx) => {
     if (cell.perimeter) {
       cellDiv.classList.add("perimeter");
     } else if (cell.doorSpace) {
-      cellDiv.classList.add("door-space");
+      cellDiv.classList.add(cell.doorSpace);
     } else if (cell.openSpace) {
       cellDiv.classList.add("open");
     } else if (cell.nothing) {

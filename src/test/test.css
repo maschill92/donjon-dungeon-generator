@@ -19,9 +19,27 @@
 .cell.perimeter {
   background-color: lightgray;
 }
-.cell.door-space {
-  background-color: cornflowerblue;
+
+.cell.arch {
+  background-color: #ddd;
 }
-.cell.empty {
+.cell.door {
+  background-color: lightblue;
+}
+.cell.locked {
+  background-color: pink;
+}
+.cell.trapped {
+  background-color: greenyellow;
+}
+.cell.secret {
+  background-color: magenta;
+}
+.cell.portcullis {
+  background-color: lightsalmon;
+}
+
+.cell.empty,
+.cell.perimeter {
   background-color: black;
 }
