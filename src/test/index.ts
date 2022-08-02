@@ -10,6 +10,8 @@ const parsed = parseDonjonData(donjonData);
 const container = document.createElement("div");
 container.id = "root";
 container.classList.add("container");
+const img = document.createElement("img");
+img.src = "/src/test/donjon-2.png";
 
 parsed.forEach((row, rowIdx) => {
   const rowDiv = document.createElement("div");
@@ -37,6 +39,6 @@ parsed.forEach((row, rowIdx) => {
   container.appendChild(rowDiv);
 });
 
-document.getElementById("app")!.appendChild(container);
+document.getElementById("app")!.append(container, img);
 
 export {};

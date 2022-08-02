@@ -44,6 +44,8 @@ type DoorType =
 
 interface DonjonDungeonCell {
   value: number;
+  row: number;
+  col: number;
   nothing: boolean;
   perimeter: boolean;
   openSpace: boolean;
@@ -51,21 +53,33 @@ interface DonjonDungeonCell {
   label: boolean;
 }
 
-function parseCellData(cell: number): DonjonDungeonCell {
+function parseCellData(
+  value: number,
+  row: number,
+  col: number
+): DonjonDungeonCell {
   return {
-    value: cell,
-    nothing: cell === NOTHING,
-    perimeter: !!(cell & PERIMETER),
-    openSpace: !!(cell & OPENSPACE),
-    doorSpace: parseCellDoorType(cell),
-    label: !!(cell & LABEL),
+    value,
+    row,
+    col,
+    nothing: value === NOTHING,
+    perimeter: !!(value & PERIMETER),
+    openSpace: !!(value & OPENSPACE),
+    doorSpace: parseCellDoorType(value),
+    label: !!(value & LABEL),
   };
 }
 
 export function parseDonjonData(donjonData: RawDonjonDungeon) {
-  return donjonData.cells.map((row, rowIdx) => {
+  const cells = donjonData.cells
+    // strip 4 rows from top and bottom
+    .slice(4, -4)
+    // for each row, strip 4 columns from left and right
+    .map((cols) => cols.slice(4, -4));
+
+  return cells.map((row, rowIdx) => {
     return row.map((cell, colIdx) => {
-      return parseCellData(cell);
+      return parseCellData(cell, rowIdx, colIdx);
     });
   });
 }
