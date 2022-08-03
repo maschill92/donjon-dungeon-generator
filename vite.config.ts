@@ -1,5 +1,6 @@
 import { resolve as pathResolve } from "path";
 import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
 const FOUNDRY_CONFIG = {
   dataPath: "C:\\Users\\michael.schilling\\AppData\\Local\\FoundryVTT",
@@ -8,29 +9,12 @@ const FOUNDRY_CONFIG = {
   openBrowser: true, // Open a web browser when running `npm run build:serve`; defaults to false
 };
 
-function resolveUrl(relativePath, absolute = true) {
-  const routeStart = absolute ? "/" : "";
-  const routePrefix = FOUNDRY_CONFIG.routePrefix
-    ? `${FOUNDRY_CONFIG.routePrefix}/`
-    : "";
-  return `${routeStart}${routePrefix}${relativePath}`;
-}
-
 const config = defineConfig(({ command, mode }) => {
   return {
     root: ".",
     publicDir: resolve("public"),
     server: {
       port: 30001,
-      //   open: FOUNDRY_CONFIG.openBrowser ?? false,
-      //   proxy: {
-      //     [`^(?!${resolveUrl("modules/donjon-dungeon-generator")})`]:
-      //       "http://localhost:30000/",
-      //     [resolveUrl("socket.io/")]: {
-      //       target: "ws://localhost:30000",
-      //       ws: true,
-      //     },
-      //   },
     },
     build: {
       outDir: resolve("dist"),
@@ -43,10 +27,12 @@ const config = defineConfig(({ command, mode }) => {
         fileName: () => "donjon-dungeon-generator.js",
       },
     },
+    plugins: [command === "serve" ? vue() : null],
   };
 });
 
 export default config;
+
 function resolve(path: string): string {
   return pathResolve(__dirname, path);
 }

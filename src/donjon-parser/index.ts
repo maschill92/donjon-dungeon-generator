@@ -42,7 +42,7 @@ type DoorType =
 
 //#endregion cell bits
 
-interface DonjonDungeonCell {
+export interface DonjonDungeonCell {
   value: number;
   row: number;
   col: number;
@@ -70,7 +70,9 @@ function parseCellData(
   };
 }
 
-export function parseDonjonData(donjonData: RawDonjonDungeon) {
+export type DonjonDungeon = DonjonDungeonCell[][];
+
+export function parseDonjonData(donjonData: RawDonjonDungeon): DonjonDungeon {
   const cells = donjonData.cells
     // strip 4 rows from top and bottom
     .slice(4, -4)
