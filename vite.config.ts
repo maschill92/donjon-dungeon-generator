@@ -1,5 +1,6 @@
 import { resolve as pathResolve } from "path";
 import { defineConfig } from "vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 import vue from "@vitejs/plugin-vue";
 
 const FOUNDRY_CONFIG = {
@@ -27,7 +28,7 @@ const config = defineConfig(({ command, mode }) => {
         fileName: () => "donjon-dungeon-generator.js",
       },
     },
-    plugins: [command === "serve" ? vue() : null],
+    plugins: [tsConfigPaths(), command === "serve" ? vue() : null],
   };
 });
 
