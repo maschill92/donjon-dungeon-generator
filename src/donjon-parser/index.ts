@@ -51,6 +51,8 @@ export interface DonjonDungeonCell {
   openSpace: boolean;
   doorSpace: DoorType;
   label: boolean;
+  blocked: boolean;
+  free: boolean;
 }
 
 function parseCellData(
@@ -67,6 +69,13 @@ function parseCellData(
     openSpace: !!(value & OPENSPACE),
     doorSpace: parseCellDoorType(value),
     label: !!(value & LABEL),
+    get blocked(): boolean {
+      return this.nothing || this.perimeter;
+    },
+    get free(): boolean {
+      // ignore doors for now
+      return this.openSpace || this.doorSpace !== false;
+    },
   };
 }
 
